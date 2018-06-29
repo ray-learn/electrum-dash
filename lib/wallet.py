@@ -25,7 +25,10 @@
 #   - Imported_Wallet: imported address, no keystore
 #   - Standard_Wallet: one keystore, P2PKH
 #   - Multisig_Wallet: several keystores, P2SH
-
+# 钱包类别：
+# - 导入钱包：导入地址，无keystore
+# - 标准钱包：单独keystore，P2KH
+# - 多签钱包：多个keystore，P2SH
 
 import os
 import threading
@@ -66,6 +69,7 @@ from .paymentrequest import PR_PAID, PR_UNPAID, PR_UNKNOWN, PR_EXPIRED
 from .paymentrequest import InvoiceStore
 from .contacts import Contacts
 
+# 交易状态，未确认、父未确认、未验证、本地
 TX_STATUS = [
     _('Unconfirmed'),
     _('Unconfirmed parent'),

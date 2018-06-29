@@ -44,7 +44,7 @@ from .version import ELECTRUM_VERSION, PROTOCOL_VERSION
 from .i18n import _
 from . import masternode_manager
 
-
+# 节点尝试间隔
 NODES_RETRY_INTERVAL = 60
 SERVER_RETRY_INTERVAL = 10
 
