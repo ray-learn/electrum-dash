@@ -771,7 +771,7 @@ class QueuePipe:
 
 
 
-
+# 设置线程的异常处理钩子
 def setup_thread_excepthook():
     """
     Workaround for `sys.excepthook` thread bug from:
